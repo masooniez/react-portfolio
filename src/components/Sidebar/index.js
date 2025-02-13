@@ -8,7 +8,7 @@ import { faGithub, faLinkedin, faYoutube ,faDiscord} from '@fortawesome/free-bra
 
 const Sidebar = () => (
     <div className='nav-bar'>
-        <Link className='logo' to='/react-portfolio'>
+        <Link className='logo' to='react-portfolio'>
             <img src={LogoS} alt='logo' />
             <img className = "sub-logo" src={LogoSubtitle} alt='slobodan' />
         </Link>
