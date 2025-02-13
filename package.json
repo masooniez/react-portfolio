@@ -1,8 +1,6 @@
 {
   "homepage": "https://masooniez.github.io/react-portfolio",
-  "about": "https://masooniez.github.io/about",
-  "contact": "https://masooniez.github.io/contact",
-  "resume": "https://masooniez.github.io/resume",
+
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
