@@ -8,7 +8,7 @@ import { faGithub, faLinkedin, faYoutube ,faDiscord} from '@fortawesome/free-bra
 
 const Sidebar = () => (
     <div className='nav-bar'>
-        <Link className='logo' to='/'>
+        <Link className='logo' to='/react-portfolio'>
             <img src={LogoS} alt='logo' />
             <img className = "sub-logo" src={LogoSubtitle} alt='slobodan' />
         </Link>
@@ -33,7 +33,7 @@ const Sidebar = () => (
             </a>
         </li>
         <li>
-            <a target = "_blank" rel= 'noreferrer' href='https://www.linkedin.com/in/mason-kim-tran-573934326/'>
+            <a target = "_blank" rel= 'noreferrer' href='https://github.com/masooniez'>
                 <FontAwesomeIcon icon = {faGithub} color= "4d4d4e" />
             </a>
         </li>
@@ -43,7 +43,7 @@ const Sidebar = () => (
             </a>
         </li>
         <li>
-            <a target = "_blank" rel= 'noreferrer' href='https://www.linkedin.com/in/mason-kim-tran-573934326/'>
+            <a target = "_blank" rel= 'noreferrer' href='http://discordapp.com/users/1339428991412600904'>
                 <FontAwesomeIcon icon = {faDiscord} color= "4d4d4e" />
             </a>
         </li>

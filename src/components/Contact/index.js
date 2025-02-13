@@ -1,8 +1,23 @@
 import { useEffect, useState, useRef } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
+
 import Loader from 'react-loaders';
 import emailjs from '@emailjs/browser';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import L from 'leaflet';
+
+// Define a custom red marker icon with a larger size
+const redIcon = L.icon({
+  iconUrl:
+    'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
+  shadowUrl:
+    'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-shadow.png',
+  iconSize: [35, 55], // Bigger size
+  iconAnchor: [17, 55],
+  popupAnchor: [1, -34],
+  shadowSize: [55, 55]
+});
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -18,13 +33,12 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs
-            .sendForm(
-                'service_1zrsxgc',
-                'template_6cemgxx',
-                refForm.current,
-                'nLRyYX9Iy-KDrZTLd'
-            )
+        emailjs.sendForm(
+            process.env.REACT_APP_EMAILJS_SERVICE_ID,
+            process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+            refForm.current,
+            process.env.REACT_APP_EMAILJS_USER_ID
+        )
             .then(
                 () => {
                     alert('Message successfully sent!');
@@ -106,15 +120,12 @@ const Contact = () => {
                     <a href="mailto:masooniez@arizona.edu">masooniez@arizona.edu</a>
                 </div>
                 <div className="map-wrap">
-                    <iframe
-                        title="map"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41458.52458788127!2d-110.95137645061659!3d32.232914100045294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86d671f823b89a1b%3A0x818a174fb4d13d0!2sUniversity%20of%20Arizona!5e0!3m2!1sen!2sus!4v1676038538421!5m2!1sen!2sus"
-                        width="100%"
-                        height="100%"
-                        style={{ border: 0 }}
-                        allowFullScreen=""
-                        loading="lazy"
-                    ></iframe>
+                    <MapContainer center={[32.232914100045294, -110.95137645061659]} zoom={13}>
+                        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+                        <Marker position={[32.232914100045294, -110.95137645061659]} icon={redIcon}>
+                            <Popup>University of Arizona my school :)</Popup>
+                        </Marker>
+                    </MapContainer>
                 </div>
             </div>
             <Loader type="pacman" />

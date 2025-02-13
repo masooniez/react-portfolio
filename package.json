@@ -1,6 +1,8 @@
-
 {
   "homepage": "https://masooniez.github.io/react-portfolio",
+  "about": "https://masooniez.github.io/about",
+  "contact": "https://masooniez.github.io/contact",
+  "resume": "https://masooniez.github.io/resume",
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -53,6 +55,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.3.0"
+    "gh-pages": "^6.3.0",
+    "autoprefixer": "^10.4.14"
   }
 }
