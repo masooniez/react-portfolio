@@ -115,4 +115,99 @@
         }
       }
     }
-}
+  }
+  
+  /* Hide hamburger & close icons on desktop */
+  .hamburger-icon,
+  .close-icon {
+    display: none;
+  }
+  
+  /* ----------- MOBILE STYLES ----------- */
+  @media screen and (max-width: 1200px) {
+    .nav-bar {
+      /* Pin the sidebar to the left on mobile */
+      background: #181818;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 60px;
+      height: 100%;
+      z-index: 9999;
+  
+      /* We hide nav & ul by default; only show them if .mobile-show is toggled */
+      ul,
+      nav {
+        display: none;
+      }
+  
+      /* When .mobile-show is added, reveal nav & ul */
+      &.mobile-show {
+        ul,
+        nav {
+          display: block;
+        }
+      }
+  
+      /* Adjust the logo if you want a smaller logo on mobile
+         (optional, remove if you don't need it):
+      .logo img {
+        width: 40px;
+      }
+      */
+      
+      /* Re-position nav so it stays inside the 60px sidebar */
+      nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60px;
+        height: 100%;
+        margin: 0;
+        background: #181818;
+        z-index: 2;
+  
+        /* Make links center themselves in each row */
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+  
+        a::after {
+          opacity: 1;
+          position: initial;
+          width: auto;
+          margin-left: 10px;
+        }
+  
+        a svg {
+          opacity: 1 !important;
+        }
+      }
+  
+      /* Show hamburger and close icons on mobile */
+      .hamburger-icon,
+      .close-icon {
+        position: absolute;
+        top: 15px;
+        left: 440px;
+        display: block;
+        color: #fff;
+        font-size: 24px;
+        cursor: pointer;
+      }
+  
+      /* If you want to hide the hamburger icon after the menu is open */
+      &.mobile-show .hamburger-icon {
+        display: none;
+      }
+  
+      /* If you want the close icon in a different spot (example: shift it over) */
+      &.mobile-show .close-icon {
+        top: 15px;
+        left: 65px; /* Adjust to avoid overlapping the hamburger area */
+      }
+    }
+  }
+  
