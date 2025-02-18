@@ -42,7 +42,7 @@ const Resume = () => {
           rel="noopener noreferrer" 
           className="download-button"
         >
-          Download Resume
+          My Resume
         </a>
       </div>
     </div>
