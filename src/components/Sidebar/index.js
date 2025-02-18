@@ -12,7 +12,7 @@ const Sidebar = () => {
 
   return (
     <div className='nav-bar'>
-      <Link className='logo' to='/react-portfolio' onClick={() => setShowMobileNav(false)}>
+      <Link className='logo' to='' onClick={() => setShowMobileNav(false)}>
         <img src={LogoS} alt='logo' />
         <img className='sub-logo' src={LogoSubtitle} alt='logo subtitle' />
       </Link>
