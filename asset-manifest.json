@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.f870f993.css",
+    "main.js": "/react-portfolio/static/js/main.e8d39806.js",
+    "static/js/453.b3faef14.chunk.js": "/react-portfolio/static/js/453.b3faef14.chunk.js",
+    "static/media/mason selfie.png": "/react-portfolio/static/media/mason selfie.536a0d470aeca2cfa726.png",
+    "static/media/mLogo.png": "/react-portfolio/static/media/mLogo.65ee82ce45abd9ee3db4.png",
+    "static/media/helvetica-neu.ttf": "/react-portfolio/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
+    "static/media/LaBelleAurore.woff": "/react-portfolio/static/media/LaBelleAurore.9c5433c64baa43d1d274.woff",
+    "static/media/LaBelleAurore.woff2": "/react-portfolio/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
+    "static/media/CoolveticaRg-Regular.woff": "/react-portfolio/static/media/CoolveticaRg-Regular.8307bfa187bccdc55f4d.woff",
+    "static/media/MasonLOGOS.png": "/react-portfolio/static/media/MasonLOGOS.86003186e89ae8f9b39e.png",
+    "static/media/CoolveticaRg-Regular.woff2": "/react-portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "index.html": "/react-portfolio/index.html",
+    "main.f870f993.css.map": "/react-portfolio/static/css/main.f870f993.css.map",
+    "main.e8d39806.js.map": "/react-portfolio/static/js/main.e8d39806.js.map",
+    "453.b3faef14.chunk.js.map": "/react-portfolio/static/js/453.b3faef14.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f870f993.css",
+    "static/js/main.e8d39806.js"
+  ]
+}
