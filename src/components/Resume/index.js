@@ -37,7 +37,7 @@ const Resume = () => {
           <img src={MasonSelfie} alt="Mason Selfie" />
         </div>
         <a 
-          href={`${process.env.PUBLIC_URL}/resume/Mason_Resume.pdf`} 
+          href={`${process.env.PUBLIC_URL}/resume/MasonsFinal.pdf`} 
           target="_blank" 
           rel="noopener noreferrer" 
           className="download-button"
